@@ -1,0 +1,7 @@
+C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/thirdparty/ImageLib/CMakeFiles/image.dir
+C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/thirdparty/ImageLib/thirdparty/JPEG/CMakeFiles/jpegrw.dir
+C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/CMakeFiles/objdet.dir
+C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/CMakeFiles/od.dir
+C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/thirdparty/libsvm-3.14/CMakeFiles/svm.dir

@@ -1,0 +1,475 @@
+﻿生成启动时间为 2013/11/29 15:11:58。
+     1>项目“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\objdet.vcxproj”在节点 5 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“objdet.dir\Debug\objdet.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“objdet.dir\Debug\objdet.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         Building Custom Rule C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/winlibs/FLTK /IC:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/thirdparty /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"objdet.dir\Debug\\" /Fd"objdet.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\main.cpp ..\GUIController.cpp ..\GUIModel.cpp ..\ImageView.cpp ..\ImageViewGL.cpp ..\ControlsBox.cpp
+         main.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\CroppedImageDatabase.h(33): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(115): warning C4018: “<”: 有符号/无符号不匹配
+                 c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(71): 编译类 模板 成员函数“void SBPyramid<T>::_init(CImageOf<T> &,int,int,int)”时
+                 with
+                 [
+                     T=float
+                 ]
+                 c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(30): 编译类 模板 成员函数“ParametersMap SBPyramid<T>::getDefaultParameters(void)”时
+                 with
+                 [
+                     T=float
+                 ]
+                 c:\users\yingchuan\desktop\cs4670\project5\skeleton\GUIModel.h(59): 参见对正在编译的类 模板 实例化“SBPyramid<T>”的引用
+                 with
+                 [
+                     T=float
+                 ]
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(117): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(117): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(122): warning C4018: “<”: 有符号/无符号不匹配
+         GUIController.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\CroppedImageDatabase.h(33): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+     1>..\GUIController.cpp(263): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+     1>..\GUIController.cpp(480): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+         GUIModel.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\CroppedImageDatabase.h(33): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+     1>..\GUIModel.cpp(203): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>..\GUIModel.cpp(203): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>..\GUIModel.cpp(209): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>..\GUIModel.cpp(209): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(115): warning C4018: “<”: 有符号/无符号不匹配
+                 c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(71): 编译类 模板 成员函数“void SBPyramid<T>::_init(CImageOf<T> &,int,int,int)”时
+                 with
+                 [
+                     T=float
+                 ]
+                 c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(43): 编译类 模板 成员函数“ParametersMap SBPyramid<T>::getParameters(void) const”时
+                 with
+                 [
+                     T=float
+                 ]
+                 c:\users\yingchuan\desktop\cs4670\project5\skeleton\GUIModel.h(59): 参见对正在编译的类 模板 实例化“SBPyramid<T>”的引用
+                 with
+                 [
+                     T=float
+                 ]
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(117): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(117): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\SubBandImagePyramid.inl(122): warning C4018: “<”: 有符号/无符号不匹配
+         ImageView.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\ImageView.cpp(41): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\ImageView.cpp(51): warning C4018: “<”: 有符号/无符号不匹配
+         ImageViewGL.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\ImageViewGL.cpp(147): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\ImageViewGL.cpp(159): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\ImageViewGL.cpp(205): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>..\ImageViewGL.cpp(205): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>..\ImageViewGL.cpp(206): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>..\ImageViewGL.cpp(206): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>..\ImageViewGL.cpp(206): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>..\ImageViewGL.cpp(218): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+     1>..\ImageViewGL.cpp(220): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+         ControlsBox.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\ControlsBox.cpp(102): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         正在生成代码...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"objdet.dir\Debug\objdet.exe.embed.manifest.res" objdet.dir\Debug\objdet_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\objdet.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib Debug\od.lib ..\winlibs\FLTK\lib\fltkimages.lib ..\winlibs\FLTK\lib\fltkforms.lib ..\winlibs\FLTK\lib\fltkgl.lib opengl32.lib ..\winlibs\FLTK\lib\fltk.lib wsock32.lib comctl32.lib ..\winlibs\FLTK\lib\fltkpng.lib ..\winlibs\FLTK\lib\fltkjpeg.lib ..\winlibs\FLTK\lib\fltkzlib.lib "..\winlibs\libjpeg-turbo\lib\jpeg-static.lib" glu32.lib opengl32.lib glu32.lib opengl32.lib thirdparty\ImageLib\Debug\image.lib "thirdparty\libsvm-3.14\Debug\svm.lib" thirdparty\ImageLib\thirdparty\JPEG\Debug\jpegrw.lib ..\winlibs\FLTK\lib\fltk.lib wsock32.lib comctl32.lib ..\winlibs\FLTK\lib\fltkpng.lib ..\winlibs\FLTK\lib\fltkjpeg.lib ..\winlibs\FLTK\lib\fltkzlib.lib "..\winlibs\libjpeg-turbo\lib\jpeg-static.lib" /MANIFEST /ManifestFile:"objdet.dir\Debug\objdet.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/Debug/objdet.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/Debug/objdet.lib" /MACHINE:X86 objdet.dir\Debug\objdet.exe.embed.manifest.res
+         objdet.dir\Debug\main.obj
+         objdet.dir\Debug\GUIController.obj
+         objdet.dir\Debug\GUIModel.obj
+         objdet.dir\Debug\ImageView.obj
+         objdet.dir\Debug\ImageViewGL.obj
+         objdet.dir\Debug\ControlsBox.obj  /machine:X86 /debug 
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>fltkimages.lib(Fl_BMP_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_BMP_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_GIF_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_GIF_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_Help_Dialog.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_Help_Dialog.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(fl_images_core.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(fl_images_core.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_JPEG_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_JPEG_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_PNG_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_PNG_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_PNM_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_PNM_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkgl.lib(Fl_Gl_Choice.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkgl.lib(Fl_Gl_Choice.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkgl.lib(Fl_Gl_Device_Plugin.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkgl.lib(Fl_Gl_Device_Plugin.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkgl.lib(Fl_Gl_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkgl.lib(Fl_Gl_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkgl.lib(gl_draw.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkgl.lib(gl_draw.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(case.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(case.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(filename_list.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(filename_list.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(filename_match.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(filename_match.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_abort.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_abort.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_arc.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_arc.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_arci.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_arci.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_arg.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_arg.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_ask.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_ask.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Bitmap.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Bitmap.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Box.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Box.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_boxtype.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_boxtype.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Button.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Button.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_color.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_color.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_compose.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_compose.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Counter.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Counter.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_cursor.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_cursor.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_curve.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_curve.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Device.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Device.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_dnd.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_dnd.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Double_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Double_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_draw.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_draw.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_draw_image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_draw_image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_draw_pixmap.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_draw_pixmap.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_font.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_font.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_get_key.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_get_key.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_get_system_colors.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_get_system_colors.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_grab.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_grab.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Group.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Group.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_gtk.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_gtk.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Help_View.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Help_View.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Input.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Input.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Input_.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Input_.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_labeltype.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_labeltype.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_line_style.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_line_style.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_lock.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_lock.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_add.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_add.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_Bar.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_Bar.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_Button.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_Button.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Native_File_Chooser.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Native_File_Chooser.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_open_uri.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_open_uri.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Overlay_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Overlay_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Pixmap.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Pixmap.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_plastic.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_plastic.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Preferences.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Preferences.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_read_image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_read_image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_rect.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_rect.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Repeat_Button.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Repeat_Button.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Return_Button.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Return_Button.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_round_box.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_round_box.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Scroll.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Scroll.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_scroll_area.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_scroll_area.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Scrollbar.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Scrollbar.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Shared_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Shared_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_shortcut.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_shortcut.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Single_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Single_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Slider.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Slider.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_symbols.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_symbols.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Table.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Table.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Tabs.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Tabs.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Tiled_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Tiled_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Tooltip.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Tooltip.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_utf.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_utf.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_utf8.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_utf8.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Valuator.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Valuator.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_vertex.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_vertex.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Widget.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Widget.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Window_hotspot.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Window_hotspot.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_XBM_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_XBM_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_XPM_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_XPM_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(flstring.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(flstring.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(is_spacing.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(is_spacing.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(numericsort.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(numericsort.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(scandir.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(scandir.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(screen_xywh.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(screen_xywh.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(vsnprintf.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(vsnprintf.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(png.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(png.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngerror.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngerror.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngget.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngget.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngmem.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngmem.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngread.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngread.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngrio.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngrio.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngrtran.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngrtran.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngrutil.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngrutil.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngset.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngset.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngtrans.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngtrans.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcapimin.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcapimin.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcapistd.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcapistd.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jccoefct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jccoefct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jccolor.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jccolor.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcdctmgr.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcdctmgr.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jchuff.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jchuff.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcinit.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcinit.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcmainct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcmainct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcmarker.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcmarker.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcmaster.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcmaster.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcomapi.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcomapi.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcparam.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcparam.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jaricom.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jaricom.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcarith.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcarith.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdarith.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdarith.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcprepct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcprepct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcsample.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcsample.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdapimin.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdapimin.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdapistd.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdapistd.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdatadst.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdatadst.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdatasrc.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdatasrc.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdcoefct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdcoefct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdcolor.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdcolor.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jddctmgr.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jddctmgr.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdhuff.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdhuff.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdinput.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdinput.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdmainct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdmainct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdmarker.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdmarker.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdmaster.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdmaster.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdmerge.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdmerge.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdpostct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdpostct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdsample.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdsample.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jerror.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jerror.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jfdctflt.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jfdctflt.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jfdctfst.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jfdctfst.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jfdctint.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jfdctint.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jidctflt.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jidctflt.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jidctfst.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jidctfst.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jidctint.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jidctint.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jmemmgr.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jmemmgr.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jmemnobs.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jmemnobs.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jquant1.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jquant1.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jquant2.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jquant2.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jutils.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jutils.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(adler32.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(adler32.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(crc32.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(crc32.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(inffast.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(inffast.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(inflate.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(inflate.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(inftrees.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(inftrees.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(zutil.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(zutil.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+       Manifest:
+         正在删除文件“objdet.dir\Debug\objdet.exe.embed.manifest”。
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"objdet.dir\Debug\objdet.exe.embed.manifest" /manifest objdet.dir\Debug\objdet.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"objdet.dir\Debug\objdet.exe.embed.manifest.res" objdet.dir\Debug\objdet_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\objdet.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib Debug\od.lib ..\winlibs\FLTK\lib\fltkimages.lib ..\winlibs\FLTK\lib\fltkforms.lib ..\winlibs\FLTK\lib\fltkgl.lib opengl32.lib ..\winlibs\FLTK\lib\fltk.lib wsock32.lib comctl32.lib ..\winlibs\FLTK\lib\fltkpng.lib ..\winlibs\FLTK\lib\fltkjpeg.lib ..\winlibs\FLTK\lib\fltkzlib.lib "..\winlibs\libjpeg-turbo\lib\jpeg-static.lib" glu32.lib opengl32.lib glu32.lib opengl32.lib thirdparty\ImageLib\Debug\image.lib "thirdparty\libsvm-3.14\Debug\svm.lib" thirdparty\ImageLib\thirdparty\JPEG\Debug\jpegrw.lib ..\winlibs\FLTK\lib\fltk.lib wsock32.lib comctl32.lib ..\winlibs\FLTK\lib\fltkpng.lib ..\winlibs\FLTK\lib\fltkjpeg.lib ..\winlibs\FLTK\lib\fltkzlib.lib "..\winlibs\libjpeg-turbo\lib\jpeg-static.lib" /MANIFEST /ManifestFile:"objdet.dir\Debug\objdet.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/Debug/objdet.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/build/Debug/objdet.lib" /MACHINE:X86 objdet.dir\Debug\objdet.exe.embed.manifest.res
+         objdet.dir\Debug\main.obj
+         objdet.dir\Debug\GUIController.obj
+         objdet.dir\Debug\GUIModel.obj
+         objdet.dir\Debug\ImageView.obj
+         objdet.dir\Debug\ImageViewGL.obj
+         objdet.dir\Debug\ControlsBox.obj  /machine:X86 /debug 
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>fltkimages.lib(Fl_BMP_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_BMP_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_GIF_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_GIF_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_Help_Dialog.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_Help_Dialog.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(fl_images_core.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(fl_images_core.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_JPEG_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_JPEG_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_PNG_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_PNG_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkimages.lib(Fl_PNM_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkimages.lib(Fl_PNM_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkgl.lib(Fl_Gl_Choice.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkgl.lib(Fl_Gl_Choice.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkgl.lib(Fl_Gl_Device_Plugin.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkgl.lib(Fl_Gl_Device_Plugin.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkgl.lib(Fl_Gl_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkgl.lib(Fl_Gl_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkgl.lib(gl_draw.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkgl.lib(gl_draw.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(case.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(case.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(filename_list.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(filename_list.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(filename_match.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(filename_match.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_abort.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_abort.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_arc.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_arc.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_arci.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_arci.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_arg.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_arg.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_ask.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_ask.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Bitmap.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Bitmap.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Box.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Box.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_boxtype.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_boxtype.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Button.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Button.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_color.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_color.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_compose.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_compose.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Counter.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Counter.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_cursor.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_cursor.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_curve.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_curve.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Device.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Device.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_dnd.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_dnd.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Double_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Double_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_draw.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_draw.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_draw_image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_draw_image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_draw_pixmap.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_draw_pixmap.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_font.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_font.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_get_key.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_get_key.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_get_system_colors.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_get_system_colors.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_grab.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_grab.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Group.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Group.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_gtk.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_gtk.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Help_View.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Help_View.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Input.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Input.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Input_.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Input_.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_labeltype.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_labeltype.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_line_style.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_line_style.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_lock.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_lock.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_add.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_add.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_Bar.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_Bar.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_Button.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_Button.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Menu_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Menu_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Native_File_Chooser.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Native_File_Chooser.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_open_uri.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_open_uri.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Overlay_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Overlay_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Pixmap.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Pixmap.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_plastic.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_plastic.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Preferences.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Preferences.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_read_image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_read_image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_rect.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_rect.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Repeat_Button.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Repeat_Button.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Return_Button.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Return_Button.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_round_box.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_round_box.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Scroll.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Scroll.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_scroll_area.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_scroll_area.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Scrollbar.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Scrollbar.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Shared_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Shared_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_shortcut.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_shortcut.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Single_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Single_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Slider.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Slider.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_symbols.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_symbols.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Table.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Table.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Tabs.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Tabs.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Tiled_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Tiled_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Tooltip.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Tooltip.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_utf.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_utf.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_utf8.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_utf8.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Valuator.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Valuator.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(fl_vertex.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(fl_vertex.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Widget.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Widget.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Window.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Window.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_Window_hotspot.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_Window_hotspot.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_XBM_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_XBM_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(Fl_XPM_Image.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(Fl_XPM_Image.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(flstring.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(flstring.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(is_spacing.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(is_spacing.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(numericsort.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(numericsort.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(scandir.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(scandir.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(screen_xywh.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(screen_xywh.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltk.lib(vsnprintf.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltk.lib(vsnprintf.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(png.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(png.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngerror.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngerror.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngget.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngget.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngmem.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngmem.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngread.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngread.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngrio.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngrio.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngrtran.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngrtran.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngrutil.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngrutil.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngset.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngset.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkpng.lib(pngtrans.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkpng.lib(pngtrans.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcapimin.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcapimin.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcapistd.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcapistd.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jccoefct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jccoefct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jccolor.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jccolor.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcdctmgr.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcdctmgr.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jchuff.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jchuff.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcinit.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcinit.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcmainct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcmainct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcmarker.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcmarker.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcmaster.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcmaster.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcomapi.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcomapi.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcparam.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcparam.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jaricom.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jaricom.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcarith.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcarith.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdarith.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdarith.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcprepct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcprepct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jcsample.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jcsample.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdapimin.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdapimin.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdapistd.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdapistd.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdatadst.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdatadst.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdatasrc.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdatasrc.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdcoefct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdcoefct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdcolor.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdcolor.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jddctmgr.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jddctmgr.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdhuff.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdhuff.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdinput.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdinput.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdmainct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdmainct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdmarker.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdmarker.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdmaster.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdmaster.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdmerge.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdmerge.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdpostct.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdpostct.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jdsample.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jdsample.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jerror.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jerror.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jfdctflt.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jfdctflt.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jfdctfst.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jfdctfst.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jfdctint.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jfdctint.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jidctflt.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jidctflt.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jidctfst.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jidctfst.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jidctint.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jidctint.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jmemmgr.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jmemmgr.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jmemnobs.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jmemnobs.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jquant1.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jquant1.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jquant2.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jquant2.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkjpeg.lib(jutils.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkjpeg.lib(jutils.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(adler32.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(adler32.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(crc32.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(crc32.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(inffast.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(inffast.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(inflate.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(inflate.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(inftrees.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(inftrees.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>fltkzlib.lib(zutil.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“fltkzlib.lib(zutil.obj)”或在“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         objdet.vcxproj -> C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\objdet.exe
+       FinalizeBuildStatus:
+         正在删除文件“objdet.dir\Debug\objdet.unsuccessfulbuild”。
+         正在对“objdet.dir\Debug\objdet.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\objdet.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:08.73

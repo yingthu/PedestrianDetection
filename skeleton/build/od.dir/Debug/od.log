@@ -1,0 +1,258 @@
+﻿生成启动时间为 2013/11/29 15:11:52。
+     1>项目“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\od.vcxproj”在节点 3 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“od.dir\Debug\od.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“od.dir\Debug\od.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         Building Custom Rule C:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/winlibs/FLTK /IC:/Users/Yingchuan/Desktop/CS4670/project5/skeleton/thirdparty /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"od.dir\Debug\\" /Fd"od.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Utils.cpp ..\Feature.cpp ..\SupportVectorMachine.cpp ..\CroppedImageDatabase.cpp ..\ImageDatabase.cpp ..\PrecisionRecall.cpp ..\ObjectDetector.cpp ..\Detection.cpp ..\FileIO.cpp ..\ParametersMap.cpp
+         Utils.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Utils.cpp(19): warning C4244: “=”: 从“const double”转换到“uchar”，可能丢失数据
+                 ..\Utils.cpp(25): 参见对正在编译的函数 模板 实例化“void convertRGB2GrayImage<uchar>(const CImageOf<T> &,CImageOf<T> &)”的引用
+                 with
+                 [
+                     T=uchar
+                 ]
+     1>..\Utils.cpp(19): warning C4244: “=”: 从“const double”转换到“float”，可能丢失数据
+                 ..\Utils.cpp(26): 参见对正在编译的函数 模板 实例化“void convertRGB2GrayImage<float>(const CImageOf<T> &,CImageOf<T> &)”的引用
+                 with
+                 [
+                     T=float
+                 ]
+         Feature.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\CroppedImageDatabase.h(33): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+     1>..\Feature.cpp(118): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\Feature.cpp(220): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\Feature.cpp(221): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\Feature.cpp(228): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>..\Feature.cpp(228): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>..\Feature.cpp(277): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\Feature.cpp(278): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\Feature.cpp(300): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>..\Feature.cpp(300): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>..\Feature.cpp(364): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\Feature.cpp(397): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         SupportVectorMachine.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\CroppedImageDatabase.h(33): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+     1>..\SupportVectorMachine.cpp(126): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>..\SupportVectorMachine.cpp(130): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>..\SupportVectorMachine.cpp(137): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\SupportVectorMachine.cpp(176): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>..\SupportVectorMachine.cpp(187): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\SupportVectorMachine.cpp(196): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : 参见“fscanf”的声明
+     1>..\SupportVectorMachine.cpp(197): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : 参见“fscanf”的声明
+     1>..\SupportVectorMachine.cpp(220): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\SupportVectorMachine.cpp(287): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+         CroppedImageDatabase.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\CroppedImageDatabase.h(33): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+     1>..\CroppedImageDatabase.cpp(78): warning C4018: “<”: 有符号/无符号不匹配
+         ImageDatabase.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\ImageDatabase.cpp(70): warning C4018: “<”: 有符号/无符号不匹配
+         PrecisionRecall.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\PrecisionRecall.cpp(10): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\PrecisionRecall.cpp(36): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\PrecisionRecall.cpp(65): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+         ObjectDetector.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         Detection.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Detection.cpp(94): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(94): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(94): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(95): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(95): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(95): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(97): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(97): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(97): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(98): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(98): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(98): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(102): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(102): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(102): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(103): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(103): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(103): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\Detection.cpp(142): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\Detection.cpp(149): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\Detection.cpp(157): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\Detection.cpp(163): warning C4244: “=”: 从“const double”转换到“float”，可能丢失数据
+     1>..\Detection.cpp(168): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\Detection.cpp(171): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>..\Detection.cpp(176): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>..\Detection.cpp(182): warning C4244: “参数”: 从“float”转换到“unsigned int”，可能丢失数据
+     1>..\Detection.cpp(197): warning C4018: “<”: 有符号/无符号不匹配
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(163): warning C4244: “初始化”: 从“const double”转换到“float”，可能丢失数据
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(247): 参见对正在编译的函数 模板 实例化“std::_Pair_base<_Ty1,_Ty2>::_Pair_base<int&,const double&>(_Other1,_Other2)”的引用
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=float,
+                     _Other1=int &,
+                     _Other2=const double &
+                 ]
+                 ..\Detection.cpp(143): 参见对正在编译的函数 模板 实例化“std::pair<_Ty1,_Ty2>::pair<int&,const double&>(_Other1,_Other2)”的引用
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=float,
+                     _Other1=int &,
+                     _Other2=const double &
+                 ]
+         FileIO.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\CroppedImageDatabase.h(33): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+     1>..\FileIO.cpp(6): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\FileIO.cpp(20): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\FileIO.cpp(25): warning C4101: “buff”: 未引用的局部变量
+     1>..\FileIO.cpp(42): warning C4018: “<”: 有符号/无符号不匹配
+         ParametersMap.cpp
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(206): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(211): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\yingchuan\desktop\cs4670\project5\skeleton\thirdparty\imagelib\Image.h(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\ParametersMap.cpp(15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\ParametersMap.cpp(38): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : 参见“fscanf”的声明
+     1>..\ParametersMap.cpp(42): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : 参见“fscanf”的声明
+     1>..\ParametersMap.cpp(90): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\ParametersMap.cpp(109): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\ParametersMap.cpp(115): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : 参见“fscanf”的声明
+     1>..\ParametersMap.cpp(118): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : 参见“fscanf”的声明
+     1>..\ParametersMap.cpp(8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+                 ..\ParametersMap.cpp(52): 参见对正在编译的函数 模板 实例化“std::string toString<double>(const std::string &,T)”的引用
+                 with
+                 [
+                     T=double
+                 ]
+         正在生成代码...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\od.lib" /NOLOGO od.dir\Debug\Utils.obj
+         od.dir\Debug\Feature.obj
+         od.dir\Debug\SupportVectorMachine.obj
+         od.dir\Debug\CroppedImageDatabase.obj
+         od.dir\Debug\ImageDatabase.obj
+         od.dir\Debug\PrecisionRecall.obj
+         od.dir\Debug\ObjectDetector.obj
+         od.dir\Debug\Detection.obj
+         od.dir\Debug\FileIO.obj
+         od.dir\Debug\ParametersMap.obj
+         od.vcxproj -> C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\Debug\od.lib
+       FinalizeBuildStatus:
+         正在删除文件“od.dir\Debug\od.unsuccessfulbuild”。
+         正在对“od.dir\Debug\od.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\Yingchuan\Desktop\CS4670\project5\skeleton\build\od.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.96
