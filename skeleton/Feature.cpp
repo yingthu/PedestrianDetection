@@ -437,6 +437,7 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 	   channel, and take the one with the largest norm as the pixel's
 	   gradient vector" -- From Dalal & Triggs paper
 	*/
+	
 	/* Compute gradients in x and y directions */
 	CFloatImage xGrad(img.Shape());
 	CFloatImage yGrad(img.Shape());
@@ -449,10 +450,15 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 	CFloatImage gradOri(img.Shape().width, img.Shape().height, 1);
 
 	// Used for HoG voting
-	int numCellsX = _round(img.Shape().width / _cellSize);
-	int numCellsY = _round(img.Shape().height / _cellSize);
+	int numCellsX = img.Shape().width / _cellSize;
+	int numCellsY = img.Shape().height / _cellSize;
+
+	//printf("numCellsX = %d\n", numCellsX);
+	//printf("numCellsY = %d\n", numCellsY);
+
 	// Initialize for output
 	feat = CFloatImage(numCellsX, numCellsY, _nAngularBins);
+	feat.ClearPixels();
 
 	for (int row = 0; row < img.Shape().height; row++)
 	{
@@ -490,13 +496,12 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 	}
 
 	/* Add contribution (Cells' support overlaps with pixel) */
-	CFloatImage HoGHist(img.Shape().width, img.Shape().height, _nAngularBins);
 	float sigma = 8;
 	
 	// For each pixel, add its contribution to 
-	for (int col = 0; col < img.Shape().height; col++)
+	for (int col = 0; col < img.Shape().width; col++)
 	{
-		for (int row = 0; row < img.Shape().width; row++)
+		for (int row = 0; row < img.Shape().height; row++)
 		{
 			float maxAngle = (_unsignedGradients)? M_PI : 2.0f*M_PI;
 			float stepAngle = maxAngle / (float)_nAngularBins;
@@ -513,13 +518,18 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 			else
 				binAngle = _round(gradOri.Pixel(col, row, 0)/stepAngle);
 
-			int cellX = _round(col / _cellSize);
-			int cellY = _round(row / _cellSize);
+			int cellX = col / _cellSize;
+			int cellY = row / _cellSize;
+
+			if (cellX >= numCellsX || cellY >= numCellsY)
+				continue;
 
 			for (int nY = -1; nY <= 1; nY++)
 			{
 				for (int nX = -1; nX <= 1; nX++)
 				{
+					if (abs(nX + nY) != 1)
+						continue;
 					int currCellX = cellX + nX;
 					int currCellY = cellY + nY;
 
@@ -538,7 +548,7 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 			}
 		}
 	}
-
+	
 	/* Normalization */
 	float thresh = 0.3f;
 	float epsilon = 0.1f;
@@ -547,15 +557,15 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 		for (int x = 0; x < numCellsX; x++)
 		{
 			float sum = 0;
-			for (int bin = 0; bin < _nAngularBins; bin++)
+			for (int bin = 0; bin < _nAngularBins; bin++) 
 				sum += feat.Pixel(x, y, bin) * feat.Pixel(x, y, bin);
 
 			sum += epsilon * epsilon;
 			float thresholdedSum = 0;
-
 			for (int bin = 0; bin < _nAngularBins; bin++)
 			{
 				feat.Pixel(x, y, bin) /= sqrt(sum);
+				
 				if (feat.Pixel(x, y, bin) > thresh)
 					feat.Pixel(x, y, bin) = thresh;
 				thresholdedSum += feat.Pixel(x, y, bin) * feat.Pixel(x, y, bin);
@@ -564,6 +574,7 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 			thresholdedSum += epsilon * epsilon;
 			for (int bin = 0; bin < _nAngularBins; bin++)
 				feat.Pixel(x, y, bin) /= sqrt(thresholdedSum);
+			//printf("x = %d, y = %d, feat = %f\n", x, y, feat.Pixel(x,y,0));
 		}
 	}
     /******** END TODO ********/

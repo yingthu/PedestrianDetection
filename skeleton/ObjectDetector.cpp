@@ -81,13 +81,12 @@ ObjectDetector::operator()( const CFloatImage &svmResp, const Size &roiSize,
 				{
 					//should we use i,j or imScale*i,imScale*j? As they are used for computing overlaping of detections from different levels
 					//see the next todo
-					dets.push_back(Detection(i,j,svmResp.Pixel(i,j,0),roiSize.width*imScale,roiSize.height*imScale));
+					dets.push_back(Detection(double(i)/featureScaleFactor,double(j)/featureScaleFactor,svmResp.Pixel(i,j,0),roiSize.width/featureScaleFactor,roiSize.height/featureScaleFactor));
 				}
 			}
 		}
 	}
 
-printf("TODO: %s:%d\n", __FILE__, __LINE__); 
 
     /******** END TODO ********/
 }
@@ -161,7 +160,6 @@ ObjectDetector::operator()( const SBFloatPyramid &svmRespPyr, const Size &roiSiz
 		}
 	}
 
-printf("TODO: %s:%d\n", __FILE__, __LINE__); 
 
     /******** END TODO ********/
 }
