@@ -90,23 +90,22 @@ SupportVectorMachine::train(const std::vector<float> &labels, const FeatureColle
     // entry to -1
     _data = new svm_node[nVecs * (dim + 1)];
 
+	// Position in the feature vector
+	int posFeatVec = 0;
+	// Counter for elements in _data
+	int dataCnt = 0;
 	// Loop through each feature vector
 	for (int i = 0; i < nVecs; i++)
 	{
 		// Set labels
 		problem.y[i] = labels[i];
-
-		// Position in the feature vector
-		int posFeatVec = 0;
-		// Counter for elements in _data
-		int dataCnt = 0;
 		
 		// For each vector, loop through feature elements --> (x, y, band)
 		for (int y = 0; y < shape.height; y++)
 		{
 			for (int x = 0; x < shape.width; x++)
 			{
-				for (int band = 0; band < 3; band++)
+				for (int band = 0; band < shape.nBands; band++)
 				{
 					// 0 ... (dim-1)
 					if (posFeatVec < dim)
@@ -122,6 +121,7 @@ SupportVectorMachine::train(const std::vector<float> &labels, const FeatureColle
 						dataCnt++;
 						// Set the index entry to -1
 						_data[dataCnt].index = -1;
+						_data[dataCnt].value = -1;
 						// Position in a new feature vector
 						posFeatVec = 0;
 					}
@@ -312,7 +312,7 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
     //
     // Useful functions:
     // Convolve, BandSelect, this->getWeights(), this->getBiasTerm()
-
+	
 	Feature weights = this->getWeights();
 	int nWtBands = weights.Shape().nBands;
 	
@@ -357,7 +357,7 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
 
 	}
 	// End of band loop
-
+	
     /******** END TODO ********/
 }
 
