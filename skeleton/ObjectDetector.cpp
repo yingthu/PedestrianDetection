@@ -1,4 +1,6 @@
 #include "ObjectDetector.h"
+#include <iostream>
+using namespace std;
 
 #define WIN_SIZE_NMS_KEY   "nms_win_size"
 #define RESP_THESH_KEY     "sv_response_threshold"
@@ -58,6 +60,7 @@ ObjectDetector::operator()( const CFloatImage &svmResp, const Size &roiSize,
 	double imgheight=svmResp.Shape().height;
 	double imgwidth=svmResp.Shape().width;
 	int halfwinSize=_winSizeNMS/2;
+	//cout<<"fuck!"<<endl<<imgheight<<endl<<imgwidth<<endl<<halfwinSize<<endl<<roiSize.width<<endl<<roiSize.height<<endl<<imScale<<endl<<featureScaleFactor<<endl<<"fuck!"<<endl;
 
 	//doing exactly what the instruction says, one thing not sure
 	for (int i=halfwinSize;i<imgwidth-halfwinSize;i++)
@@ -71,7 +74,7 @@ ObjectDetector::operator()( const CFloatImage &svmResp, const Size &roiSize,
 				{
 					for (int jj=j-halfwinSize;jj<j+halfwinSize;jj++)
 					{
-						if (svmResp.Pixel(ii,jj,0)>svmResp.Pixel(i,j,0))
+						if (svmResp.Pixel(ii,jj,0)>(svmResp.Pixel(i,j,0)+1e-6))
 						{
 							isMax=0;
 						}
@@ -81,12 +84,14 @@ ObjectDetector::operator()( const CFloatImage &svmResp, const Size &roiSize,
 				{
 					//should we use i,j or imScale*i,imScale*j? As they are used for computing overlaping of detections from different levels
 					//see the next todo
-					dets.push_back(Detection(double(i)/featureScaleFactor,double(j)/featureScaleFactor,svmResp.Pixel(i,j,0),roiSize.width/featureScaleFactor,roiSize.height/featureScaleFactor));
+					dets.push_back(Detection(double(i)/featureScaleFactor*imScale,double(j)/featureScaleFactor*imScale,svmResp.Pixel(i,j,0),roiSize.width/featureScaleFactor*imScale,roiSize.height/featureScaleFactor*imScale));
+					//cout<<double(i)<<endl<<double(j)<<endl<<svmResp.Pixel(i,j,0)<<endl<<roiSize.width<<endl<<roiSize.height<<endl<<imScale<<endl;
 				}
 			}
 		}
 	}
 
+printf("TODO: %s:%d\n", __FILE__, __LINE__); 
 
     /******** END TODO ********/
 }
@@ -125,11 +130,13 @@ ObjectDetector::operator()( const SBFloatPyramid &svmRespPyr, const Size &roiSiz
 
     // Find detections per level, already there in the skeleton
     std::vector<Detection> allDets;
-    for (int i = 0; i < svmRespPyr.getNLevels(); i++) {
-
+    for (int i = 0; i < svmRespPyr.getNLevels(); i++) 
+	{
         std::vector<Detection> levelDets;
         this->operator()(svmRespPyr[i], roiSize, featureScaleFactor, levelDets, svmRespPyr.levelScale(i));
-
+		double imgheight=svmRespPyr[i].Shape().height;
+		double imgwidth=svmRespPyr[i].Shape().width;
+		cout<<"Fuck!"<<endl<<imgheight<<endl<<imgwidth<<endl<<"Fuck!"<<endl;
         allDets.insert(allDets.end(), levelDets.begin(), levelDets.end());
     }
 
@@ -160,6 +167,7 @@ ObjectDetector::operator()( const SBFloatPyramid &svmRespPyr, const Size &roiSiz
 		}
 	}
 
+printf("TODO: %s:%d\n", __FILE__, __LINE__); 
 
     /******** END TODO ********/
 }
