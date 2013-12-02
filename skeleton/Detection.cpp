@@ -1,5 +1,8 @@
 #include "Detection.h"
 
+#define MAX(x,y) (((x) < (y)) ? (y) : (x))
+#define MIN(x,y) (((x) < (y)) ? (x) : (y))
+
 Detection::Detection():
     x(0), y(0), response(0), width(0), height(0)
 {}
@@ -30,6 +33,23 @@ Detection::relativeOverlap(const Detection &other) const
     // of the two rectangles.
 
     double relOver = 0.0;
+
+	double x11=x-width/2;
+	double x12=x+width/2;
+	double y11=y-height/2;
+	double y12=y+height/2;
+
+	double x21=other.x-other.width/2;
+	double x22=other.x+other.width/2;
+	double y21=other.y-other.height/2;
+	double y22=other.y+other.height/2;
+
+	//Area of intersection
+	double SI=MAX(0,MIN(x12,x22)-MAX(x11,x21))*MAX(0,MIN(y12,y22)-MAX(y11,y21));
+	//Area of union
+	double SU=width*height+other.width*other.height-SI;
+
+	relOver=SI/SU;
 
 printf("TODO: %s:%d\n", __FILE__, __LINE__); 
 

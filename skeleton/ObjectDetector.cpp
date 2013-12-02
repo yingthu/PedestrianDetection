@@ -55,6 +55,38 @@ ObjectDetector::operator()( const CFloatImage &svmResp, const Size &roiSize,
 
     dets.resize(0);
 
+	double imgheight=svmResp.Shape().height;
+	double imgwidth=svmResp.Shape().width;
+	int halfwinSize=_winSizeNMS/2;
+
+	//doing exactly what the instruction says, one thing not sure
+	for (int i=halfwinSize;i<imgwidth-halfwinSize;i++)
+	{
+		for (int j=halfwinSize;j<imgheight-halfwinSize;j++)
+		{
+			if (svmResp.Pixel(i,j,0)>_respThresh)
+			{
+				int isMax=1;
+				for (int ii=i-halfwinSize;ii<i+halfwinSize;ii++)
+				{
+					for (int jj=j-halfwinSize;jj<j+halfwinSize;jj++)
+					{
+						if (svmResp.Pixel(ii,jj,0)>svmResp.Pixel(i,j,0))
+						{
+							isMax=0;
+						}
+					}
+				}
+				if (isMax==1)
+				{
+					//should we use i,j or imScale*i,imScale*j? As they are used for computing overlaping of detections from different levels
+					//see the next todo
+					dets.push_back(Detection(i,j,svmResp.Pixel(i,j,0),roiSize.width*imScale,roiSize.height*imScale));
+				}
+			}
+		}
+	}
+
 printf("TODO: %s:%d\n", __FILE__, __LINE__); 
 
     /******** END TODO ********/
@@ -92,7 +124,7 @@ ObjectDetector::operator()( const SBFloatPyramid &svmRespPyr, const Size &roiSiz
 
     dets.resize(0);
 
-    // Find detections per level
+    // Find detections per level, already there in the skeleton
     std::vector<Detection> allDets;
     for (int i = 0; i < svmRespPyr.getNLevels(); i++) {
 
@@ -101,6 +133,33 @@ ObjectDetector::operator()( const SBFloatPyramid &svmRespPyr, const Size &roiSiz
 
         allDets.insert(allDets.end(), levelDets.begin(), levelDets.end());
     }
+
+	//this is my code
+	//for every possible detection, compare it with every other detections and decide whether to keep it
+	int detlen=allDets.size();
+	for (int i=0;i<detlen;i++)
+	{
+		
+		int canusei=1;
+		for (int j=0;j<detlen;j++)
+		{
+			if (j==i)
+			{
+				continue;
+			}
+			else
+			{
+				if ((allDets[i].relativeOverlap(allDets[j])>_overlapThresh) && sortByResponse(allDets[j],allDets[i]))
+				{
+					canusei=0;
+				}
+			}
+		}
+		if (canusei==1)
+		{
+			dets.push_back(allDets[i]);
+		}
+	}
 
 printf("TODO: %s:%d\n", __FILE__, __LINE__); 
 
