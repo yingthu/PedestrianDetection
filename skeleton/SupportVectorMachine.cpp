@@ -90,7 +90,54 @@ SupportVectorMachine::train(const std::vector<float> &labels, const FeatureColle
     // entry to -1
     _data = new svm_node[nVecs * (dim + 1)];
 
-printf("TODO: %s:%d\n", __FILE__, __LINE__); 
+	// Loop through each feature vector
+	for (int i = 0; i < nVecs; i++)
+	{
+		// Set labels
+		problem.y[i] = labels[i];
+
+		// Position in the feature vector
+		int posFeatVec = 0;
+		// Counter for elements in _data
+		int dataCnt = 0;
+		
+		// For each vector, loop through feature elements --> (x, y, band)
+		for (int y = 0; y < shape.height; y++)
+		{
+			for (int x = 0; x < shape.width; x++)
+			{
+				for (int band = 0; band < 3; band++)
+				{
+					// 0 ... (dim-1)
+					if (posFeatVec < dim)
+					{
+						_data[dataCnt].index = posFeatVec;
+						_data[dataCnt].value = fset[i].Pixel(x, y, band);
+						posFeatVec++;
+					}
+					// dim : end of current feature vector
+					// If just set last feature value, set end flag in the same iteration
+					if (posFeatVec == dim)
+					{
+						dataCnt++;
+						// Set the index entry to -1
+						_data[dataCnt].index = -1;
+						// Position in a new feature vector
+						posFeatVec = 0;
+					}
+					// Ready for next element
+					dataCnt++;
+				}
+				// End of band loop
+			}
+			// End of x loop
+		}
+		// End of y loop
+
+		// Position where the i-th feature vector starts
+		problem.x[i] = &_data[i * (dim+1)];
+	}
+	// End of i loop
 
     /******** END TODO ********/
 
@@ -253,7 +300,7 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
     //
     // Here you will evaluate the above expression by breaking
     // the dot product into a series of convolutions (remember that
-    // a convolution can be though of as a point wise dot product with
+    // a convolution can be thought of as a point wise dot product with
     // the convolution kernel), each one with a different band.
     //
     // Convolve each band of the SVM weights with the corresponding
@@ -266,7 +313,50 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
     // Useful functions:
     // Convolve, BandSelect, this->getWeights(), this->getBiasTerm()
 
-printf("TODO: %s:%d\n", __FILE__, __LINE__); 
+	Feature weights = this->getWeights();
+	int nWtBands = weights.Shape().nBands;
+	
+	// Set the center of the window as the origin for the conv. kernel
+	for (int band = 0; band < nWtBands; band++)
+	{
+		// Select a band
+		CFloatImage featBand;
+		CFloatImage weightBand;
+		BandSelect(feat, featBand, band, 0);
+		BandSelect(weights, weightBand, band, 0);
+
+		// Set the origin of the kernel
+		weightBand.origin[0] = weights.Shape().width / 2;
+		weightBand.origin[1] = weights.Shape().height / 2;
+		
+		// Compute the dot product
+		CFloatImage dotproduct;
+		Convolve(featBand, dotproduct, weightBand);
+
+		// Add the resulting score image
+		for (int y = 0; y < feat.Shape().height; y++)
+		{
+			for (int x = 0; x < feat.Shape().width; x++)
+			{
+				response.Pixel(x, y, 0) += dotproduct.Pixel(x, y, 0);
+			}
+			// End of x loop
+		}
+		// End of y loop
+
+		// Substract the SVM bias term
+		for (int y = 0; y < feat.Shape().height; y++)
+		{
+			for (int x = 0; x < feat.Shape().width; x++)
+			{
+				response.Pixel(x, y, 0) -= this->getBiasTerm();
+			}
+			// End of x loop
+		}
+		// End of y loop
+
+	}
+	// End of band loop
 
     /******** END TODO ********/
 }
