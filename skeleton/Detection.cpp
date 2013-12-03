@@ -51,8 +51,6 @@ Detection::relativeOverlap(const Detection &other) const
 
 	relOver=SI/SU;
 
-printf("TODO: %s:%d\n", __FILE__, __LINE__); 
-
     /******** END TODO ********/
     return relOver;
 }

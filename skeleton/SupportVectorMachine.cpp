@@ -300,7 +300,7 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
     //
     // Here you will evaluate the above expression by breaking
     // the dot product into a series of convolutions (remember that
-    // a convolution can be thought of as a point wise dot product with
+    // a convolution can be though of as a point wise dot product with
     // the convolution kernel), each one with a different band.
     //
     // Convolve each band of the SVM weights with the corresponding
@@ -312,7 +312,7 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
     //
     // Useful functions:
     // Convolve, BandSelect, this->getWeights(), this->getBiasTerm()
-	
+
 	Feature weights = this->getWeights();
 	int nWtBands = weights.Shape().nBands;
 	
@@ -357,8 +357,8 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
 		// End of x loop
 	}
 	// End of y loop
-    
-	/******** END TODO ********/
+
+    /******** END TODO ********/
 }
 
 void

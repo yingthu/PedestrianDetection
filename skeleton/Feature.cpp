@@ -292,7 +292,7 @@ TinyImageGradFeatureExtractor::operator()(const CFloatImage &imgRGB_, Feature &f
     // Useful functions:
     // convertRGB2GrayImage, TypeConvert, WarpGlobal, Convolve
 
-    CFloatImage tinyImg(targetW, targetH, 1);
+	CFloatImage tinyImg(targetW, targetH, 1);
 	/* Convert image to grayscale */
     CFloatImage imgG;
     convertRGB2GrayImage(imgRGB_, imgG);
@@ -453,9 +453,6 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 	int numCellsX = img.Shape().width / _cellSize;
 	int numCellsY = img.Shape().height / _cellSize;
 
-	//printf("numCellsX = %d\n", numCellsX);
-	//printf("numCellsY = %d\n", numCellsY);
-
 	// Initialize for output
 	feat = CFloatImage(numCellsX, numCellsY, _nAngularBins);
 	feat.ClearPixels();
@@ -550,7 +547,7 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 	}
 	
 	/* Normalization */
-	//float thresh = 0.2f;
+	// L2-norm method in the paper
 	float epsilon = 0.1f;
 	for (int y = 0; y < numCellsY; y++)
 	{
@@ -559,39 +556,14 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
 			float sum = 0;
 			for (int bin = 0; bin < _nAngularBins; bin++) 
 				sum += feat.Pixel(x, y, bin) * feat.Pixel(x, y, bin);
-			//printf("sum = %f\n", sum);
+			
 			sum += epsilon * epsilon;
-			//printf("modifiedSum = %f\n", sum);
-			//float thresholdedSum = 0;
+			
 			for (int bin = 0; bin < _nAngularBins; bin++)
-			{
 				feat.Pixel(x, y, bin) /= sqrt(sum);
-				
-				//if (feat.Pixel(x, y, bin) > thresh)
-				//	feat.Pixel(x, y, bin) = thresh;
-				//thresholdedSum += feat.Pixel(x, y, bin) * feat.Pixel(x, y, bin);
-			}
-
-			//thresholdedSum += epsilon * epsilon;
-			//for (int bin = 0; bin < _nAngularBins; bin++)
-			//	feat.Pixel(x, y, bin) /= sqrt(thresholdedSum);
-			//printf("x = %d, y = %d, feat = %f\n", x, y, feat.Pixel(x,y,0));
-			/*for (int bin = 0; bin < _nAngularBins; bin++)
-			{
-				if (feat.Pixel(x, y, bin) > thresh)
-				{
-					printf("%f\n", feat.Pixel(x, y, bin));	
-					feat.Pixel(x, y, bin) = thresh;
-				}
-			}
-			float sum = 0;
-			for (int bin = 0; bin < _nAngularBins; bin++)
-				sum += feat.Pixel(x, y, bin) * feat.Pixel(x, y, bin);
-			sum += epsilon * epsilon;
-			for (int bin = 0; bin < _nAngularBins; bin++)
-				feat.Pixel(x, y, bin) /= sqrt(sum);*/
 		}
 	}
+
     /******** END TODO ********/
 }
 
