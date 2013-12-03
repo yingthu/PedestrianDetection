@@ -331,6 +331,7 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
 		
 		// Compute the dot product
 		CFloatImage dotproduct;
+		dotproduct.ClearPixels();
 		Convolve(featBand, dotproduct, weightBand);
 
 		// Add the resulting score image
@@ -343,22 +344,21 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
 			// End of x loop
 		}
 		// End of y loop
-
-		// Substract the SVM bias term
-		for (int y = 0; y < feat.Shape().height; y++)
-		{
-			for (int x = 0; x < feat.Shape().width; x++)
-			{
-				response.Pixel(x, y, 0) -= this->getBiasTerm();
-			}
-			// End of x loop
-		}
-		// End of y loop
-
 	}
 	// End of band loop
 	
-    /******** END TODO ********/
+	// Substract the SVM bias term
+	for (int y = 0; y < feat.Shape().height; y++)
+	{
+		for (int x = 0; x < feat.Shape().width; x++)
+		{
+			response.Pixel(x, y, 0) -= this->getBiasTerm();
+		}
+		// End of x loop
+	}
+	// End of y loop
+    
+	/******** END TODO ********/
 }
 
 void
