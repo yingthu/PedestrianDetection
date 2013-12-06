@@ -1,4 +1,6 @@
 #include "ObjectDetector.h"
+#include <iostream>
+using namespace std;
 
 #define WIN_SIZE_NMS_KEY   "nms_win_size"
 #define RESP_THESH_KEY     "sv_response_threshold"
@@ -72,19 +74,22 @@ ObjectDetector::operator()( const CFloatImage &svmResp, const Size &roiSize,
 				{
 					for (int jj=j-halfwinSize;jj<j+halfwinSize;jj++)
 					{
-						if (svmResp.Pixel(ii,jj,0)>(svmResp.Pixel(i,j,0)+1e-6))
+						if (!((ii==i)&&(jj==j)))
 						{
-							isMax=0;
+							if (svmResp.Pixel(ii,jj,0)>=(svmResp.Pixel(i,j,0)))
+							{
+								isMax=0;
+							}
 						}
 					}
 				}
 				if (isMax==1)
 				{
-					dets.push_back(Detection(double(i)/featureScaleFactor*imScale,
-						                     double(j)/featureScaleFactor*imScale,
+					dets.push_back(Detection(double(i)/featureScaleFactor/imScale,
+						                     double(j)/featureScaleFactor/imScale,
 											 svmResp.Pixel(i,j,0),
-											 roiSize.width/featureScaleFactor*imScale,
-											 roiSize.height/featureScaleFactor*imScale));
+											 roiSize.width/featureScaleFactor/imScale,
+											 roiSize.height/featureScaleFactor/imScale));
 				}
 			}
 		}
@@ -133,6 +138,8 @@ ObjectDetector::operator()( const SBFloatPyramid &svmRespPyr, const Size &roiSiz
         this->operator()(svmRespPyr[i], roiSize, featureScaleFactor, levelDets, svmRespPyr.levelScale(i));
 		double imgheight=svmRespPyr[i].Shape().height;
 		double imgwidth=svmRespPyr[i].Shape().width;
+		double imgscale=svmRespPyr.levelScale(i);
+		cout<<"fuck!"<<endl<<imgscale<<endl<<"fuck!"<<endl;
         allDets.insert(allDets.end(), levelDets.begin(), levelDets.end());
     }
 
