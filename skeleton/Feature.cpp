@@ -292,32 +292,32 @@ TinyImageGradFeatureExtractor::operator()(const CFloatImage &imgRGB_, Feature &f
     // Useful functions:
     // convertRGB2GrayImage, TypeConvert, WarpGlobal, Convolve
 
-	CFloatImage tinyImg(targetW, targetH, 1);
-	/* Convert image to grayscale */
+    CFloatImage tinyImg(targetW, targetH, 1);
+    /* Convert image to grayscale */
     CFloatImage imgG;
     convertRGB2GrayImage(imgRGB_, imgG);
 
-	/* Resize image to be _targetW by _targetH */
+    /* Resize image to be _targetW by _targetH */
     CTransform3x3 s = CTransform3x3::Scale( 1. / _scale, 1. / _scale );
-	WarpGlobal(imgG, tinyImg, s, eWarpInterpLinear);
+    WarpGlobal(imgG, tinyImg, s, eWarpInterpLinear);
 
-	/* Compute gradients in x and y directions */
-	CFloatImage xGrad(targetW, targetH, 1);
-	CFloatImage yGrad(targetW, targetH, 1);
-	Convolve(tinyImg, xGrad, _kernelDx);
-	Convolve(tinyImg, yGrad, _kernelDy);
+    /* Compute gradients in x and y directions */
+    CFloatImage xGrad(targetW, targetH, 1);
+    CFloatImage yGrad(targetW, targetH, 1);
+    Convolve(tinyImg, xGrad, _kernelDx);
+    Convolve(tinyImg, yGrad, _kernelDy);
 
-	/* Compute gradient magnitude */
-	CFloatImage tinyImgGrad(targetW, targetH, 1);
-	for (int row = 0; row < tinyImg.Shape().height; row++)
-	{
-		for (int col = 0; col < tinyImg.Shape().width; col++)
-		{
-			tinyImgGrad.Pixel(col, row, 0) = sqrt(xGrad.Pixel(col, row, 0) * xGrad.Pixel(col, row, 0) +
-				                                  yGrad.Pixel(col, row, 0) * yGrad.Pixel(col, row, 0));
+    /* Compute gradient magnitude */
+    CFloatImage tinyImgGrad(targetW, targetH, 1);
+    tinyImgGrad.ClearPixels();
+    for (int row = 0; row < targetH; row++)
+    {
+        for (int col = 0; col < targetW; col++)
+        {
+            tinyImgGrad.Pixel(col, row, 0) = sqrt(xGrad.Pixel(col, row, 0) * xGrad.Pixel(col, row, 0) +
+                                                  yGrad.Pixel(col, row, 0) * yGrad.Pixel(col, row, 0));
 		}
-	}
-
+    }
     feat = tinyImgGrad; 
 
     /******** END TODO ********/
@@ -434,135 +434,136 @@ HOGFeatureExtractor::operator()(const CFloatImage &img, Feature &feat) const
     // convertRGB2GrayImage, TypeConvert, WarpGlobal, Convolve
 
 	/* "For colour images, we calculate separate gradients for each colour
-	   channel, and take the one with the largest norm as the pixel's
-	   gradient vector" -- From Dalal & Triggs paper
-	*/
-	
-	/* Compute gradients in x and y directions */
-	CFloatImage xGrad(img.Shape());
-	CFloatImage yGrad(img.Shape());
-	
-	Convolve(img, xGrad, _kernelDx);
-	Convolve(img, yGrad, _kernelDy);
+       channel, and take the one with the largest norm as the pixel's
+       gradient vector" -- From Dalal & Triggs paper
+    */
+        
+    /* Compute gradients in x and y directions */
+    CFloatImage xGrad(img.Shape());
+    CFloatImage yGrad(img.Shape());
+    
+    Convolve(img, xGrad, _kernelDx);
+    Convolve(img, yGrad, _kernelDy);
 
-	/* Compute gradient magnitude and orientation */
-	CFloatImage gradMag(img.Shape().width, img.Shape().height, 1);
-	CFloatImage gradOri(img.Shape().width, img.Shape().height, 1);
+    /* Compute gradient magnitude and orientation */
+    CFloatImage gradMag(img.Shape().width, img.Shape().height, 1);
+    CFloatImage gradOri(img.Shape().width, img.Shape().height, 1);
 
-	// Used for HoG voting
-	int numCellsX = img.Shape().width / _cellSize;
-	int numCellsY = img.Shape().height / _cellSize;
+    // Used for HoG voting
+    int numCellsX = img.Shape().width / _cellSize;
+    int numCellsY = img.Shape().height / _cellSize;
 
-	// Initialize for output
-	feat = CFloatImage(numCellsX, numCellsY, _nAngularBins);
-	feat.ClearPixels();
+    // Initialize for output
+    feat = CFloatImage(numCellsX, numCellsY, _nAngularBins);
+    feat.ClearPixels();
 
-	for (int row = 0; row < img.Shape().height; row++)
-	{
-		for (int col = 0; col < img.Shape().width; col++)
-		{
-			float maxGradMag = 0;
-			int maxBand = 0;
-			// Find the largest norm
-			for (int band = 0; band < 3; band++)
-			{
-				float currGradMag = sqrt(xGrad.Pixel(col, row, band) * xGrad.Pixel(col, row, band) +
-		                                 yGrad.Pixel(col, row, band) * yGrad.Pixel(col, row, band));
-				if (currGradMag > maxGradMag)
-				{
-					maxGradMag = currGradMag;
-					maxBand = band;
-				}
-			}
-			gradMag.Pixel(col, row, 0) = maxGradMag;
-			// Gradient orientation
-			float maxGradX = xGrad.Pixel(col, row, maxBand);
-			float maxGradY = yGrad.Pixel(col, row, maxBand);
-			if (maxGradX == 0)
-				gradOri.Pixel(col, row, 0) = (maxGradY >= 0 || _unsignedGradients) ? M_PI/2.0f : 3.0f/2.0f*M_PI;
-			else
-			{
+    for (int row = 0; row < img.Shape().height; row++)
+    {
+        for (int col = 0; col < img.Shape().width; col++)
+        {
+            float maxGradMag = 0;
+            int maxBand = 0;
+            // Find the largest norm
+            for (int band = 0; band < 3; band++)
+            {
+                float currGradMag = sqrt(xGrad.Pixel(col, row, band) * xGrad.Pixel(col, row, band) +
+                                         yGrad.Pixel(col, row, band) * yGrad.Pixel(col, row, band));
+                if (currGradMag > maxGradMag)
+                {
+                     maxGradMag = currGradMag;
+                     maxBand = band;
+	            }
+            }
+            gradMag.Pixel(col, row, 0) = maxGradMag;
+            // Gradient orientation
+            float maxGradX = xGrad.Pixel(col, row, maxBand);
+            float maxGradY = yGrad.Pixel(col, row, maxBand);
+            if (maxGradX == 0)
+                gradOri.Pixel(col, row, 0) = (maxGradY >= 0 || _unsignedGradients) ? M_PI/2.0f : 3.0f/2.0f*M_PI;
+            else
+            {
 				float angle = atan(abs(maxGradY / maxGradX));
-				angle = (maxGradX > 0) ? angle : (M_PI -angle);
-				angle = (maxGradY > 0) ? angle : (2.0f*M_PI - angle);
-				if (_unsignedGradients)
+                angle = (maxGradX > 0) ? angle : (M_PI -angle);
+                angle = (maxGradY > 0) ? angle : (2.0f*M_PI - angle);
+                if (_unsignedGradients)
 					angle = fmod(angle, (float)M_PI);
-				gradOri.Pixel(col, row, 0) = angle;
-			}
-		}
-	}
+                gradOri.Pixel(col, row, 0) = angle;
+            }
+        }
+    }
 
-	/* Add contribution (Cells' support overlaps with pixel) */
-	float sigma = 0.5 * _cellSize;
-	
-	// For each pixel, add its contribution to 
-	for (int col = 0; col < img.Shape().width; col++)
-	{
-		for (int row = 0; row < img.Shape().height; row++)
-		{
+    /* Add contribution (Cells' support overlaps with pixel) */
+    float sigma = 0.5 * _cellSize;
+        
+    // For each pixel, add its contribution to 
+    for (int col = 0; col < img.Shape().width; col++)
+    {
+        for (int row = 0; row < img.Shape().height; row++)
+        {
 			float maxAngle = (_unsignedGradients)? M_PI : 2.0f*M_PI;
-			float stepAngle = maxAngle / (float)_nAngularBins;
-			float angle = gradOri.Pixel(col, row, 0);
-			int binAngle;
+            float stepAngle = maxAngle / (float)_nAngularBins;
+            float angle = gradOri.Pixel(col, row, 0);
+            int binAngle;
 
-			if (_unsignedGradients)
-			{
+            if (_unsignedGradients)
+            {
 				if (angle < stepAngle / 2.0f || angle >= M_PI - stepAngle / 2.0f)
 					binAngle = 0;
-				else
-					binAngle = (int) ((angle + stepAngle/2.0f)/stepAngle);
-			}
-			else
-				binAngle = _round(gradOri.Pixel(col, row, 0)/stepAngle);
+                else
+                    binAngle = (int) ((angle + stepAngle/2.0f)/stepAngle);
+            }
+            else
+                binAngle = _round(gradOri.Pixel(col, row, 0)/stepAngle);
 
-			int cellX = col / _cellSize;
-			int cellY = row / _cellSize;
+            int cellX = col / _cellSize;
+            int cellY = row / _cellSize;
 
-			if (cellX >= numCellsX || cellY >= numCellsY)
+            if (cellX >= numCellsX || cellY >= numCellsY)
 				continue;
 
-			for (int nY = -1; nY <= 1; nY++)
-			{
+            for (int nY = -1; nY <= 1; nY++)
+            {
 				for (int nX = -1; nX <= 1; nX++)
-				{
+                {
 					if (abs(nX + nY) != 1)
 						continue;
 					int currCellX = cellX + nX;
-					int currCellY = cellY + nY;
+                    int currCellY = cellY + nY;
 
-					if (currCellX < 0 || currCellX >= numCellsX || currCellY < 0 || currCellY >= numCellsY)
+                    if (currCellX < 0 || currCellX >= numCellsX || currCellY < 0 || currCellY >= numCellsY)
 						continue;
 
-					int cellCenterX = currCellX * _cellSize + _cellSize/2.0f - 1;
-					int cellCenterY = currCellY * _cellSize + _cellSize/2.0f - 1;
+                    int cellCenterX = currCellX * _cellSize + _cellSize/2.0f - 1;
+                    int cellCenterY = currCellY * _cellSize + _cellSize/2.0f - 1;
 
-					float dist2 = (col - cellCenterX) * (col - cellCenterX) +
-						          (row - cellCenterY) * (row - cellCenterY);
-					float gaussWeight = 1.0f / sqrt(2.0f*M_PI*sigma*sigma) * exp(-dist2 / (2.0f*sigma*sigma));
-					// voting from overlapped cells
-					feat.Pixel(cellX, cellY, binAngle) += gaussWeight * gradMag.Pixel(col, row, 0);
+                    float dist2 = (col - cellCenterX) * (col - cellCenterX) +
+                                  (row - cellCenterY) * (row - cellCenterY);
+                    float gaussWeight = 1.0f / sqrt(2.0f*M_PI*sigma*sigma) * exp(-dist2 / (2.0f*sigma*sigma));
+                    // voting from overlapped cells
+                    feat.Pixel(cellX, cellY, binAngle) += gaussWeight * gradMag.Pixel(col, row, 0);
+                                        
 				}
 			}
 		}
 	}
-	
+        
 	/* Normalization */
-	// L2-norm method in the paper
-	float epsilon = 0.1f;
-	for (int y = 0; y < numCellsY; y++)
-	{
+    // L2-norm method in the paper
+    float epsilon = 0.1f;
+    for (int y = 0; y < numCellsY; y++)
+    {
 		for (int x = 0; x < numCellsX; x++)
-		{
+        {
 			float sum = 0;
-			for (int bin = 0; bin < _nAngularBins; bin++) 
+            for (int bin = 0; bin < _nAngularBins; bin++) 
 				sum += feat.Pixel(x, y, bin) * feat.Pixel(x, y, bin);
-			
-			sum += epsilon * epsilon;
-			
-			for (int bin = 0; bin < _nAngularBins; bin++)
+                        
+            sum += epsilon * epsilon;
+                        
+            for (int bin = 0; bin < _nAngularBins; bin++)
 				feat.Pixel(x, y, bin) /= sqrt(sum);
-		}
-	}
+        }
+    }
 
     /******** END TODO ********/
 }
