@@ -313,7 +313,7 @@ SupportVectorMachine::predictSlidingWindow(const Feature &feat, CFloatImage &res
     // Useful functions:
     // Convolve, BandSelect, this->getWeights(), this->getBiasTerm()
 
-	Feature weights = this->getWeights();
+Feature weights = this->getWeights();
 	int nWtBands = weights.Shape().nBands;
 	
 	// Set the center of the window as the origin for the conv. kernel

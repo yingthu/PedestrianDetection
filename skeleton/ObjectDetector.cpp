@@ -1,6 +1,4 @@
 #include "ObjectDetector.h"
-#include <iostream>
-using namespace std;
 
 #define WIN_SIZE_NMS_KEY   "nms_win_size"
 #define RESP_THESH_KEY     "sv_response_threshold"
@@ -132,14 +130,11 @@ ObjectDetector::operator()( const SBFloatPyramid &svmRespPyr, const Size &roiSiz
 
     // Find detections per level
     std::vector<Detection> allDets;
-    for (int i = 0; i < svmRespPyr.getNLevels(); i++) 
-	{
+    for (int i = 0; i < svmRespPyr.getNLevels(); i++) {
+
         std::vector<Detection> levelDets;
         this->operator()(svmRespPyr[i], roiSize, featureScaleFactor, levelDets, svmRespPyr.levelScale(i));
-		double imgheight=svmRespPyr[i].Shape().height;
-		double imgwidth=svmRespPyr[i].Shape().width;
-		double imgscale=svmRespPyr.levelScale(i);
-		cout<<"fuck!"<<endl<<imgscale<<endl<<"fuck!"<<endl;
+
         allDets.insert(allDets.end(), levelDets.begin(), levelDets.end());
     }
 

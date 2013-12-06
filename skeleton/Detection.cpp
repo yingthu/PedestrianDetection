@@ -35,21 +35,21 @@ Detection::relativeOverlap(const Detection &other) const
     double relOver = 0.0;
 
 	double x11=x-width/2;
-	double x12=x+width/2;
-	double y11=y-height/2;
-	double y12=y+height/2;
+    double x12=x+width/2;
+    double y11=y-height/2;
+    double y12=y+height/2;
 
-	double x21=other.x-other.width/2;
-	double x22=other.x+other.width/2;
-	double y21=other.y-other.height/2;
-	double y22=other.y+other.height/2;
+    double x21=other.x-other.width/2;
+    double x22=other.x+other.width/2;
+    double y21=other.y-other.height/2;
+    double y22=other.y+other.height/2;
 
-	//Area of intersection
-	double SI=MAX(0,MIN(x12,x22)-MAX(x11,x21))*MAX(0,MIN(y12,y22)-MAX(y11,y21));
-	//Area of union
-	double SU=width*height+other.width*other.height-SI;
+    //Area of intersection
+    double SI=MAX(0,MIN(x12,x22)-MAX(x11,x21))*MAX(0,MIN(y12,y22)-MAX(y11,y21));
+    //Area of union
+    double SU=width*height+other.width*other.height-SI;
 
-	relOver=SI/SU;
+    relOver=SI/SU;
 
     /******** END TODO ********/
     return relOver;
@@ -163,11 +163,6 @@ computeLabels(const std::vector<Detection> &gt, const std::vector<Detection> &fo
 
     sort(idxResp.begin(), idxResp.end(), sortByResponse);
 
-    // debug
-    for(int i = 0; i < idxResp.size() - 1; i++) {
-        assert(idxResp[i].second >= idxResp[i + 1].second);
-    }
-
     label = vector<float>(found.size(), -1);
     response = vector<float>(found.size(), 0);
 
@@ -177,6 +172,8 @@ computeLabels(const std::vector<Detection> &gt, const std::vector<Detection> &fo
         int idx = idxResp[i].first;
 
         const Detection &det = found[idx];
+
+        assert(det.response == idxResp[i].second);
 
         response[idx] = det.response;
 
@@ -204,19 +201,27 @@ computeLabels(const std::vector<Detection> &gt, const std::vector<Detection> &fo
 
 void
 computeLabels(const std::vector<std::vector<Detection> > &gt, const std::vector<std::vector<Detection> > &found,
-              std::vector<float> &label, std::vector<float> &response)
+              std::vector<float> &label, std::vector<float> &response, int& nDets)
 {
     using namespace std;
     assert(gt.size() == found.size());
 
     response.resize(0);
     label.resize(0);
+    nDets = 0;
 
     for(int i = 0; i < gt.size(); i++) {
+        nDets += gt[i].size();
 
         vector<float> resp, lab;
-        PRINT_EXPR(found.size());
-        computeLabels(gt[i], found[i], resp, lab);
+        computeLabels(gt[i], found[i], lab, resp);
+
+        int nCorrect = 0;
+        for(int j = 0; j < lab.size(); j++) {
+            if(lab[j] > 0) nCorrect++;
+        }
+
+        PRINT_MSG(nCorrect << "/" << lab.size() << " detections matched");
 
         response.insert(response.end(), resp.begin(), resp.end());
         label.insert(label.end(), lab.begin(), lab.end());
